@@ -42,7 +42,7 @@ body{
     gap: 10px;
 
     max-width: 23.5rem;
-    min-height: 41.67rem;
+    height: 41.67rem;
     border-top-left-radius: 10px;
     border-top-right-radius: 10px;
     background-color: var(--natural-white);
@@ -170,4 +170,41 @@ button:active {
 
 .attribution{
     margin-top: 1.875rem;
+}
+
+
+
+@media only screen and (min-width:600px){
+
+    body{
+        margin-top: 175px;
+    }
+
+
+    .mobile-img{
+        display: none;
+    }
+
+    .desktop-img{
+        display: block;
+    }
+    
+
+    .card-main{
+        min-width: 600px;
+        height: 452px;
+        grid-template-columns: auto auto;
+        background-color: var(--natural-white);
+        border-radius: 10px;
+       
+    }
+
+    .card-main .card-img .desktop-img{
+        height:452px;
+
+        border-bottom-left-radius: 10px;
+        border-top-left-radius: 10px;
+        border-top-right-radius: 0;
+    
+    }
 }
